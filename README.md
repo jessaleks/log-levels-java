@@ -1,3 +1,7 @@
+Solution to Exercism's "Log Levels" exercise.
+Path: Java.
+
+---
 # Log Levels
 
 Welcome to Log Levels on Exercism's Java Track.
