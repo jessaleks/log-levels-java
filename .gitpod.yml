@@ -1,0 +1,11 @@
+tasks:
+    - init: |
+      sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+
+
+
+vscode:
+  extensions:
+    - redhat.java
+    - vscjava.vscode-java-debug
+    - vscjava.vscode-java-test
