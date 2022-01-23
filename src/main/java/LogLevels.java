@@ -23,11 +23,15 @@ public class LogLevels {
         return logMessage.strip();
     }
 
-    public static String logLevel(String logLine) {
-        throw new UnsupportedOperationException("Please implement the (static) LogLine.logLevel() method");
+    public static @NotNull String logLevel(@NotNull String logLine) {
+        String logL = logLine.substring(0, logLine.indexOf("]"));
+
+        return logL
+                .replace("[", "")
+                .toLowerCase();
     }
 
-    public static String reformat(String logLine) {
-        throw new UnsupportedOperationException("Please implement the (static) LogLine.reformat() method");
+    public static @NotNull String reformat(@NotNull String logLine) {
+        return String.format("%s (%s)", message(logLine), logLevel(logLine));
     }
 }
